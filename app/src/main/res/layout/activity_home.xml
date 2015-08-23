@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".HomeActivity">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/scrollView"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:text="הוסף איש קשר"
+                android:id="@+id/button"
+                android:layout_gravity="center_horizontal"
+                android:onClick="addContactOnClick" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:text="מצא איש קשר"
+                android:id="@+id/button2"
+                android:layout_gravity="center_horizontal"
+                android:onClick="findContactOnClick" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:text="טלפון"
+                android:id="@+id/button3"
+                android:layout_gravity="center_horizontal"
+                android:onClick="phoneOnClick" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:text="מצלמה"
+                android:id="@+id/button4"
+                android:layout_gravity="center_horizontal"
+                android:onClick="cameraOnClick" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:text="גלריה"
+                android:id="@+id/button5"
+                android:layout_gravity="center_horizontal"
+                android:onClick="galleryOnClick" />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:text="הודעות"
+                android:id="@+id/button6"
+                android:layout_gravity="center_horizontal"
+                android:onClick="sendSMSOnClick" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:text="אימייל"
+                android:id="@+id/button7"
+                android:onClick="EmailOnClick" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:text="WhatsApp"
+                android:id="@+id/button9"
+                android:layout_gravity="center_horizontal"
+                android:onClick="whatsAppOnClick" />
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:text="הגדרות"
+                android:id="@+id/button10"
+                android:layout_gravity="center_horizontal"
+                android:onClick="settingsOnClick"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:text="מצב שקט"
+                android:id="@+id/button11"
+                android:layout_gravity="center_horizontal"
+                android:onClick="silentOnClick"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:text="חיפוש בגוגל"
+                android:id="@+id/button12"
+                android:layout_gravity="center_horizontal"
+                android:onClick="googleSearchOnClick"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:text="לוח שנה"
+                android:id="@+id/button13"
+                android:layout_gravity="center_horizontal"
+                android:onClick="calendarhOnClick"/>
+
+            <Button
+                android:id="@+id/apps_button"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:text="רשימת אפליקציות"
+                android:layout_gravity="center_horizontal"
+                android:onClick="showApps"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
