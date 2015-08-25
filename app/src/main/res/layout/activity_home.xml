@@ -18,21 +18,6 @@
             android:layout_below="@+id/scrollView"
             android:layout_alignParentStart="true">
 
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="70dp"
-                android:text="הוסף איש קשר"
-                android:id="@+id/button"
-                android:layout_gravity="center_horizontal"
-                android:onClick="addContactOnClick" />
-
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="70dp"
-                android:text="מצא איש קשר"
-                android:id="@+id/button2"
-                android:layout_gravity="center_horizontal"
-                android:onClick="findContactOnClick" />
 
             <Button
                 android:layout_width="fill_parent"
@@ -40,7 +25,26 @@
                 android:text="טלפון"
                 android:id="@+id/button3"
                 android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/caller"
                 android:onClick="phoneOnClick" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:text="הודעות"
+                android:id="@+id/button6"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/sms"
+                android:onClick="sendSMSOnClick" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:text="WhatsApp"
+                android:id="@+id/button9"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/whatsapp"
+                android:onClick="whatsAppOnClick" />
 
             <Button
                 android:layout_width="fill_parent"
@@ -48,6 +52,7 @@
                 android:text="מצלמה"
                 android:id="@+id/button4"
                 android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/camera"
                 android:onClick="cameraOnClick" />
 
             <Button
@@ -56,29 +61,35 @@
                 android:text="גלריה"
                 android:id="@+id/button5"
                 android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/gallery"
                 android:onClick="galleryOnClick" />
-            <Button
-                android:layout_width="fill_parent"
-                android:layout_height="70dp"
-                android:text="הודעות"
-                android:id="@+id/button6"
-                android:layout_gravity="center_horizontal"
-                android:onClick="sendSMSOnClick" />
+
 
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="70dp"
                 android:text="אימייל"
                 android:id="@+id/button7"
+                android:drawableLeft="@drawable/email"
                 android:onClick="EmailOnClick" />
 
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="70dp"
-                android:text="WhatsApp"
-                android:id="@+id/button9"
+                android:text="הוסף איש קשר"
+                android:id="@+id/button"
                 android:layout_gravity="center_horizontal"
-                android:onClick="whatsAppOnClick" />
+                android:drawableLeft="@drawable/contacts"
+                android:onClick="addContactOnClick" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:text="מצא איש קשר"
+                android:id="@+id/button2"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/contacts"
+                android:onClick="findContactOnClick" />
 
 
             <Button
@@ -87,6 +98,7 @@
                 android:text="הגדרות"
                 android:id="@+id/button10"
                 android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/settings"
                 android:onClick="settingsOnClick"/>
 
             <Button
@@ -95,6 +107,7 @@
                 android:text="מצב שקט"
                 android:id="@+id/button11"
                 android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/vibrate"
                 android:onClick="silentOnClick"/>
 
             <Button
@@ -103,6 +116,7 @@
                 android:text="חיפוש בגוגל"
                 android:id="@+id/button12"
                 android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/googlesearch"
                 android:onClick="googleSearchOnClick"/>
 
             <Button
@@ -111,6 +125,7 @@
                 android:text="לוח שנה"
                 android:id="@+id/button13"
                 android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/calendar"
                 android:onClick="calendarhOnClick"/>
 
             <Button
