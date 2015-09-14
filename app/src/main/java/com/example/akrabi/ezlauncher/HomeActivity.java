@@ -48,111 +48,61 @@ public class HomeActivity extends Activity {
     public void addContactOnClick(View addContact){
 
 
-        Button button = (Button) addContact;
-        addContact.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_INSERT, ContactsContract.Contacts.CONTENT_URI);
                 startActivity(intent);
             }
-        });
-    }
+
     public void findContactOnClick(View findContact){
 
-        Button button = (Button) findContact;
-        findContact.setOnClickListener(new View.OnClickListener() {
-            @Override
 
-            public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, ContactsContract.Contacts.CONTENT_URI);
                 startActivity(intent);
             }
-        });
-    }
+
 
     public void phoneOnClick(final View phone){
 
-        Button button = (Button) phone;
-        phone.setOnClickListener(new View.OnClickListener() {
-            @Override
-
-            public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + ""));
                 startActivity(intent);
             }
-        });
-    }
 
     public void sendSMSOnClick(View sendSMS){
 
-        Button button  = (Button) sendSMS;
-        sendSMS.setOnClickListener(new View.OnClickListener(){
-            @Override
-
-            public void onClick(View v){
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("sms:"));
                 startActivity(intent);
             }
-        });
-    }
+
 
     public void galleryOnClick(View gallery){
 
-        Button button = (Button) gallery;
-        gallery.setOnClickListener(new View.OnClickListener(){
-            @Override
-
-            public void onClick(View v){
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(
                         "content://media/internal/images/media"));
                 startActivity(intent);
             }
-        });
-    }
 
     public void cameraOnClick(View camera){
 
-        Button button = (Button) camera;
-        camera.setOnClickListener(new View.OnClickListener() {
-            @Override
 
-            public void onClick(View v) {
                 Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
                 startActivity(intent);
             }
-        });
-    }
 
     public void EmailOnClick(View Email){
 
-
-        Button button = (Button) Email;
-        Email.setOnClickListener(new View.OnClickListener() {
-            @Override
-
-            public void onClick(View v) {
                 Intent intent = getPackageManager().getLaunchIntentForPackage("com.android.email");
                 startActivity(intent);
             }
-        });
-    }
 
 
     public void whatsAppOnClick(View whatsApp){
 
         boolean installed = isInstalled("com.whatsapp");
         if(installed){
-            Button button = (Button) whatsApp;
-            whatsApp.setOnClickListener(new View.OnClickListener(){
-                @Override
 
-                public void onClick(View v){
                     Intent intent = new Intent(Intent.ACTION_VIEW);
                     intent.setPackage("com.whatsapp");
                     startActivity(intent);
                 }
-            });
-        }
         else{
             Context context = getApplicationContext();
             CharSequence text = "WhatsApp not installed\nPlease install WhatsApp and try again";
@@ -165,24 +115,13 @@ public class HomeActivity extends Activity {
 
     public void settingsOnClick(View settings){
 
-        Button button = (Button) settings;
-        settings.setOnClickListener(new View.OnClickListener(){
-            @Override
-
-            public void onClick(View v){
                 Intent intent = new Intent(Settings.ACTION_SETTINGS);
                 startActivity(intent);
             }
-        });
-    }
+
 
     public void silentOnClick(View silent){
 
-        Button button = (Button) silent;
-        silent.setOnClickListener(new View.OnClickListener(){
-            @Override
-
-            public void onClick(View v){
                 AudioManager audio = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
                 if(audio.getRingerMode() > 1){
                     audio.setRingerMode(AudioManager.RINGER_MODE_VIBRATE);
@@ -190,35 +129,19 @@ public class HomeActivity extends Activity {
                 else{
                     audio.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
                 }
-            }
-        });
     }
 
     public void googleSearchOnClick(View googleSearch){
 
-        Button button = (Button) googleSearch;
-        googleSearch.setOnClickListener(new View.OnClickListener(){
-            @Override
-
-            public void onClick(View v){
                 Intent intent = new Intent(SearchManager.INTENT_ACTION_GLOBAL_SEARCH);
                 startActivity(intent);
             }
-        });
-    }
 
     public void calendarOnClick(View calendar){
 
-        Button button = (Button) calendar;
-        calendar.setOnClickListener(new View.OnClickListener(){
-            @Override
-
-            public void onClick(View v){
                 Intent intent = new Intent(Intent.ACTION_VIEW, CalendarContract.CONTENT_URI);
                 startActivity(intent);
             }
-        });
-    }
 
 
 
