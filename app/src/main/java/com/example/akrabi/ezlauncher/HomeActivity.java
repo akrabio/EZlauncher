@@ -50,7 +50,7 @@ public class HomeActivity extends Activity {
 
                 Intent intent = new Intent(Intent.ACTION_INSERT, ContactsContract.Contacts.CONTENT_URI);
                 startActivity(intent);
-            }
+    }
 
     public void findContactOnClick(View findContact){
 
@@ -99,8 +99,8 @@ public class HomeActivity extends Activity {
         boolean installed = isInstalled("com.whatsapp");
         if(installed){
 
-                    Intent intent = new Intent(Intent.ACTION_VIEW);
-                    intent.setPackage("com.whatsapp");
+                    Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("com.whatsapp"));
+    //                intent.setPackage("com.whatsapp");
                     startActivity(intent);
                 }
         else{
@@ -139,7 +139,7 @@ public class HomeActivity extends Activity {
 
     public void calendarOnClick(View calendar){
 
-                Intent intent = new Intent(Intent.ACTION_VIEW, CalendarContract.CONTENT_URI);
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("com.google.android.calendar"));
                 startActivity(intent);
             }
 
