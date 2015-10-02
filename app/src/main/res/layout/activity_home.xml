@@ -33,10 +33,10 @@
                     android:text="טלפון"
                     android:id="@+id/button3"
                     android:layout_gravity="center_horizontal"
-                    android:drawableLeft="@drawable/phone11"
-                    android:paddingLeft="25dp"
+                    android:drawableLeft="@drawable/phone1"
+                    android:paddingLeft="15dp"
                     android:onClick="phoneOnClick"
-                    android:background="@drawable/button_left"
+                    android:background="@drawable/square_button"
                     android:layout_weight="1"
                     />
 
@@ -47,8 +47,8 @@
                     android:id="@+id/button6"
                     android:layout_gravity="center_horizontal"
                     android:drawableLeft="@drawable/message"
-                    android:paddingLeft="25dp"
-                    android:background="@drawable/button_right"
+                    android:paddingLeft="15dp"
+                    android:background="@drawable/square_button"
                     android:onClick="sendSMSOnClick"
                     android:layout_weight="1"/>
 
@@ -67,9 +67,9 @@
                     android:layout_height="100dp"
                     android:text="WhatsApp"
                     android:id="@+id/button9"
-                    android:background="@drawable/button_left"
+                    android:background="@drawable/square_button"
                     android:layout_gravity="center_horizontal"
-                    android:paddingLeft="25dp"
+                    android:paddingLeft="15dp"
                     android:drawableLeft="@drawable/whatsapp1"
                     android:onClick="whatsAppOnClick"
                     android:layout_weight="1"/>
@@ -81,8 +81,8 @@
                     android:id="@+id/button4"
                     android:layout_gravity="center_horizontal"
                     android:drawableLeft="@drawable/camera2"
-                    android:paddingLeft="25dp"
-                    android:background="@drawable/button_right"
+                    android:paddingLeft="15dp"
+                    android:background="@drawable/square_button"
                     android:onClick="cameraOnClick"
                     android:layout_weight="1"/>
             </LinearLayout>
@@ -100,9 +100,9 @@
                     android:text="גלריה"
                     android:id="@+id/button5"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/button_left"
+                    android:background="@drawable/square_button"
                     android:drawableLeft="@drawable/gallery2"
-                    android:paddingLeft="25dp"
+                    android:paddingLeft="15dp"
                     android:onClick="galleryOnClick"
                     android:layout_weight="1"/>
 
@@ -113,8 +113,8 @@
                     android:text="אימייל"
                     android:id="@+id/button7"
                     android:drawableLeft="@drawable/mail1"
-                    android:paddingLeft="25dp"
-                    android:background="@drawable/button_right"
+                    android:paddingLeft="15dp"
+                    android:background="@drawable/square_button"
                     android:onClick="EmailOnClick"
                     android:layout_weight="1"/>
             </LinearLayout>
@@ -133,9 +133,9 @@
                     android:text="הוסף איש קשר"
                     android:id="@+id/button"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/button_left"
+                    android:background="@drawable/square_button"
                     android:drawableLeft="@drawable/contacts2"
-                    android:paddingLeft="25dp"
+                    android:paddingLeft="15dp"
                     android:onClick="addContactOnClick"
                     android:layout_weight="1"/>
 
@@ -145,9 +145,9 @@
                     android:text="מצא איש קשר"
                     android:id="@+id/button2"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/button_right"
+                    android:background="@drawable/square_button"
                     android:drawableLeft="@drawable/find_contact1"
-                    android:paddingLeft="25dp"
+                    android:paddingLeft="15dp"
                     android:paddingRight="10dp"
                     android:onClick="findContactOnClick"
                     android:layout_weight="1"/>
@@ -166,8 +166,9 @@
                     android:layout_height="100dp"
                     android:text="הגדרות"
                     android:id="@+id/button10"
+                    android:paddingRight="10dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/button_left"
+                    android:background="@drawable/square_button"
                     android:drawableLeft="@drawable/settings"
                     android:onClick="settingsOnClick"
                     android:layout_weight="1"/>
@@ -175,11 +176,13 @@
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="100dp"
-                    android:text="מצב שקט"
+                    android:text="מצב רטט"
                     android:id="@+id/button11"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/button_right"
-                    android:drawableLeft="@drawable/vibrate"
+                    android:background="@drawable/square_button"
+                    android:drawableLeft="@drawable/vibrate1"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
                     android:onClick="silentOnClick"
                     android:layout_weight="1"/>
             </LinearLayout>
@@ -198,9 +201,9 @@
                     android:text="חיפוש בגוגל"
                     android:id="@+id/button12"
                     android:layout_gravity="center_horizontal"
-                    android:background="@drawable/button_left"
-                    android:drawableLeft="@drawable/googlesearch"
-                    android:paddingLeft="25dp"
+                    android:background="@drawable/square_button"
+                    android:drawableLeft="@drawable/google_search"
+                    android:paddingLeft="15dp"
                     android:onClick="googleSearchOnClick"
                     android:layout_weight="1"/>
 
@@ -208,8 +211,10 @@
                     android:id="@+id/apps_button"
                     android:layout_width="0dp"
                     android:layout_height="100dp"
-                    android:text="רשימת אפליקציות"
-                    android:background="@drawable/button_right"
+                    android:text="אפליקציות"
+                    android:paddingLeft="15dp"
+                    android:background="@drawable/square_button"
+                    android:drawableLeft="@drawable/list"
                     android:layout_gravity="center_horizontal"
                     android:onClick="showApps"
                     android:layout_weight="1"/>
