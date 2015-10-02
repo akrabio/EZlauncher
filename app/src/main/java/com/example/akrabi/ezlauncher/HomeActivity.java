@@ -89,9 +89,17 @@ public class HomeActivity extends Activity {
 
     public void EmailOnClick(View Email){
 
+        boolean installedGmail = isInstalled("com.google.android.gm");
+        if(installedGmail)
+        {
+            Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.google.android.gm");
+            startActivity(launchIntent);
+        }
+        else{
                 Intent intent = getPackageManager().getLaunchIntentForPackage("com.android.email");
                 startActivity(intent);
             }
+        }
 
 
     public void whatsAppOnClick(View whatsApp){
@@ -99,9 +107,9 @@ public class HomeActivity extends Activity {
         boolean installed = isInstalled("com.whatsapp");
         if(installed){
 
-                    Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("com.whatsapp"));
-    //                intent.setPackage("com.whatsapp");
-                    startActivity(intent);
+
+            Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.whatsapp");
+            startActivity(launchIntent);
                 }
         else{
             Context context = getApplicationContext();
